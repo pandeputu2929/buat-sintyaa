@@ -2,7 +2,7 @@
 body {
     /* Background gradient: pink lembut ke biru lembut */
     background: linear-gradient(to bottom right, #ffcccc, #cce6ff); /* <-- Update di sini */
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: serif;
     margin: 0;
     display: flex;
     align-items: center;
@@ -23,10 +23,11 @@ body {
   }
   
   /* --- Baris 20: Typography --- */
-  h1, h2 {
+  h1 {
     color: #d6336c;
     margin-bottom: 20px;
   }
+
   
   p {
     font-size: 30px;
@@ -74,7 +75,7 @@ body {
     }
   
     h2 {
-      font-size: 20px;         /* Menyesuaikan ukuran huruf untuk subjudul */
+      font-size: 26px;         /* Menyesuaikan ukuran huruf untuk subjudul */
     }
   
     p, button {
