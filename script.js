@@ -1,7 +1,5 @@
 // Menambahkan event listener pada tombol "Buka Surat"
-document.getElementById('openBtn').addEventListener('click', function() {
-    // Menampilkan popup sistem
-    alert("Sistem: Surat sedang dibuka...");
+document.getElementById('openBtn').addEventListener('click', function() 
     
     // Menampilkan surat dengan animasi fade-in
     var letter = document.getElementById('letter');
