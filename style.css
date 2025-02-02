@@ -1,85 +1,70 @@
-/* --- Baris 1: Update background body dengan aksen biru --- */
 body {
-    /* Background gradient: pink lembut ke biru lembut */
-    background: linear-gradient(to bottom right, #ffcccc, #cce6ff); /* <-- Update di sini */
-    font-family: serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  /* --- Baris 10: Style container --- */
+  background: linear-gradient(to bottom right, #ffcccc, #cce6ff);
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1, h {
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #ff99a3;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #ff6680;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .container {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    margin: 20px; /* agar ada ruang di sisi layar kecil */
-  }
-  
-  /* --- Baris 20: Typography --- */
-  h1 {
-    color: #d6336c;
-    margin-bottom: 20px;
+    padding: 20px;
   }
 
-  
-  p {
-    font-size: 30px;
-    color: #333;
-    line-height: 1.6;
+  h1 {
+    font-size: 22px;
   }
-  
-  /* --- Baris 28: Button styling --- */
-  button {
-    background-color: #ff99a3;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+
+  h2 {
+    font-size: 24px;
   }
-  
-  button:hover {
-    background-color: #ff6680;
+
+  p, button {
+    font-size: 16px;
   }
-  
-  /* --- Baris 40: Animasi fade in untuk surat --- */
-  #letter {
-    margin-top: 20px;
-    opacity: 0;
-    transition: opacity 2s ease;
-  }
-  
-  #letter.show {
-    opacity: 1;
-  }
-  
-  /* --- Baris 50: Media Query untuk tampilan mobile --- */
-  @media (max-width: 768px) {
-    .container {
-      padding: 20px;           /* Mengurangi padding untuk layar kecil */
-      margin: 10px;            /* Mengurangi margin agar tidak terlalu menyempit */
-    }
-  
-    h1 {
-      font-size: 24px;         /* Menyesuaikan ukuran huruf untuk judul */
-    }
-  
-    h2 {
-      font-size: 26px;         /* Menyesuaikan ukuran huruf untuk subjudul */
-    }
-  
-    p, button {
-      font-size: 16px;         /* Menyesuaikan ukuran huruf untuk teks dan tombol */
-    }
-  }
-  
+}

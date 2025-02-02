@@ -4,29 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surat</title>
-  <!-- Memanggil file CSS eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container ">
-    <!-- Pesan awal -->
-     <h2>SURAT COKLAT</h2>
+  <div class="container">
+    <h2>SURAT COKLAT</h2>
     <h1>hai cancii 😍 semangat kerjanya</h1>
-    <!-- Tombol untuk membuka surat -->
-    <button id="openBtn">Buka Surat</button>
-    <!-- Konten surat (tersembunyi awalnya) -->
-    <div id="letter">
-      <h1>dear sintya❤️ </h1>
-      <p>
-       love uu, meskipun kamu cewe orang. tapi kalo jodohnya akuu ya punya akuu
-      </p>
-      <p>
     
-      </p>
+    <!-- Tombol untuk membuka surat -->
+    <button id="openBtn">Open</button>
+
+    <!-- Tulisan pertama (tersembunyi awalnya) -->
+    <div id="firstMessage" class="hidden">
+      <p>Love uu, meskipun kamu cewe orang. Tapi kalau jodohnya aku ya punya aku.</p>
+    </div>
+
+    <!-- Tombol kedua (tersembunyi awalnya) -->
+    <button id="messageBtn" class="hidden">Lihat Pesan</button>
+
+    <!-- Konten surat (tersembunyi awalnya) -->
+    <div id="letter" class="hidden">
+      <h1>Dear Sintya ❤️</h1>
     </div>
   </div>
 
-  <!-- Memanggil file JavaScript eksternal -->
   <script src="script.js"></script>
 </body>
 </html>
